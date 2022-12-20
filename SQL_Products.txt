@@ -1,0 +1,4 @@
+ƒл€ вывода максимальных продаж: SELECT MAX(goods_sales) FROM products
+ƒл€ вывода суммы товаров: SELECT SUM(goods_price) FROM products
+–ассортировать в алфавитном пор€дке по наименованию товара: SELECT * FROM products ORDER BY goods_name ASC
+¬ывод товаров, продажи которых больше определенного значени€, а цена находитс€ в определенном диапазоне: SELECT * FROM products WHERE goods_sales > 10 AND goods_price BETWEEN 100 AND 400
