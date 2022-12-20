@@ -1,4 +1,4 @@
-Для вывода максимальных продаж: SELECT MAX(goods_sales) FROM products
-Для вывода суммы товаров: SELECT SUM(goods_price) FROM products
-Рассортировать в алфавитном порядке по наименованию товара: SELECT * FROM products ORDER BY goods_name ASC
-Вывод товаров, продажи которых больше определенного значения, а цена находится в определенном диапазоне: SELECT * FROM products WHERE goods_sales > 10 AND goods_price BETWEEN 100 AND 400
+Р”Р»СЏ РІС‹РІРѕРґР° РјР°РєСЃРёРјР°Р»СЊРЅС‹С… РїСЂРѕРґР°Р¶: SELECT * FROM products WHERE goods_sales=(SELECT MAX(goods_sales) FROM products);
+Р”Р»СЏ РІС‹РІРѕРґР° СЃСѓРјРјС‹ С‚РѕРІР°СЂРѕРІ: SELECT SUM(goods_price) FROM products
+Р Р°СЃСЃРѕСЂС‚РёСЂРѕРІР°С‚СЊ РІ Р°Р»С„Р°РІРёС‚РЅРѕРј РїРѕСЂСЏРґРєРµ РїРѕ РЅР°РёРјРµРЅРѕРІР°РЅРёСЋ С‚РѕРІР°СЂР°: SELECT * FROM products ORDER BY goods_name ASC
+Р’С‹РІРѕРґ С‚РѕРІР°СЂРѕРІ, РїСЂРѕРґР°Р¶Рё РєРѕС‚РѕСЂС‹С… Р±РѕР»СЊС€Рµ РѕРїСЂРµРґРµР»РµРЅРЅРѕРіРѕ Р·РЅР°С‡РµРЅРёСЏ, Р° С†РµРЅР° РЅР°С…РѕРґРёС‚СЃСЏ РІ РѕРїСЂРµРґРµР»РµРЅРЅРѕРј РґРёР°РїР°Р·РѕРЅРµ: SELECT * FROM products WHERE goods_sales > 10 AND goods_price BETWEEN 100 AND 400
