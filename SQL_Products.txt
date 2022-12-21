@@ -1,4 +1,4 @@
 Для вывода максимальных продаж: SELECT * FROM products WHERE goods_sales=(SELECT MAX(goods_sales) FROM products);
-Для вывода суммы товаров: SELECT SUM(goods_price) FROM products
+Для вывода суммы товаров: SELECT SUM(goods_price) AS totalSum FROM products;
 Рассортировать в алфавитном порядке по наименованию товара: SELECT * FROM products ORDER BY goods_name ASC
 Вывод товаров, продажи которых больше определенного значения, а цена находится в определенном диапазоне: SELECT * FROM products WHERE goods_sales > 10 AND goods_price BETWEEN 100 AND 400
